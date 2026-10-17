@@ -1,11 +1,11 @@
 class Movie:
-    def __init__(self, movie_name:str, total_seats:int, ticket_price:int):
+    def __init__(self, movie_name:str, total_seats:int, ticket_price:int) -> None:
         self.movie_name = movie_name
         self.total_seats = total_seats 
         self.ticket_price = ticket_price 
         self.booked_seats = 0
     
-    def book_tickets(self, seats:int):
+    def book_tickets(self, seats:int) -> None:
         print("\n") 
         if seats > self.total_seats - self.booked_seats:
             print("not enough seats available")
@@ -16,7 +16,7 @@ class Movie:
             print(f"total price is: {self.booked_seats * self.ticket_price}")
 
     
-    def show_status(self):
+    def show_status(self)-> None:
         print("\ncurrently showing:")
         print(f"movie name: {self.movie_name}")
         print(f"available seats: {self.total_seats}")
@@ -25,5 +25,5 @@ class Movie:
     
 m1 = Movie("hello",10,100)
 m1.show_status()
-m1.book_tickets(30)
+m1.book_tickets(3)
 m1.show_status()
