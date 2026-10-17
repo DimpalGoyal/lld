@@ -1,0 +1,5 @@
+- association: connection btw 2 or more classes  
+- aggrestion: class B exist independent of A, kind of a annotation of class
+- composition: if class  B dies, A also dies. ex-> create a object of class A inside class B
+- dependency: temporarily uses another class for a short period of time
+- realization: 
